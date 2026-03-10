@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Plate2Offset — Albert Didriksen</title>
-  <meta name="description" content="Offset the impact of your meals on farmed animals with a small donation. A tool by Albert Didriksen.">
+  <title>Trolley Problem: The Game — Albert Didriksen</title>
+  <meta name="description" content="A moral philosophy game where you face 10 trolley problem dilemmas. Choose who lives and who doesn't. By Albert Didriksen.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -17,9 +17,10 @@
     }
     .iframe-wrap iframe {
       width: 100%;
-      min-height: 700px;
+      min-height: 600px;
       border: none;
       display: block;
+      aspect-ratio: 960 / 540;
     }
   </style>
 </head>
@@ -34,8 +35,8 @@
         <li><a href="research.html">Research</a></li>
         <li><a href="teaching.html">Teaching</a></li>
         <li><a href="other-work.html">Other Work</a></li>
-        <li><a href="plate2offset.html" class="active">Plate2Offset</a></li>
-        <li><a href="trolley-game.html">Trolley Game</a></li>
+        <li><a href="plate2offset.html">Plate2Offset</a></li>
+        <li><a href="trolley-game.html" class="active">Trolley Game</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="blog.html">Blog</a></li>
       </ul>
@@ -47,13 +48,13 @@
 
   <header class="page-header">
     <div class="container">
-      <h1>Plate2Offset</h1>
-      <p>A tool I built to offset the impact of meals on farmed animals. Describe what you ate, and it calculates a donation to <a href="https://www.farmkind.giving" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline;">FarmKind</a>, an effective animal welfare charity.</p>
+      <h1>Trolley Problem: The Game</h1>
+      <p>A moral philosophy game with 100 trolley problem dilemmas, from classic to absurd. Use arrow keys to choose who lives and who doesn't. No one gets off this ride with clean hands.</p>
     </div>
   </header>
 
   <div class="iframe-wrap">
-    <iframe src="https://plate2offset.vercel.app" title="Plate2Offset — Offset your meal's impact on farmed animals" allow="clipboard-write"></iframe>
+    <iframe src="https://didriksenalbert96.github.io/trolley-game/" title="Trolley Problem: The Game" allow="keyboard-map"></iframe>
   </div>
 
   <footer class="footer">
@@ -70,13 +71,5 @@
   </footer>
 
   <script src="js/main.js"></script>
-  <script>
-    window.addEventListener('message', function(e) {
-      if (e.data && e.data.type === 'plate2offset-height') {
-        var iframe = document.querySelector('.iframe-wrap iframe');
-        if (iframe) iframe.style.height = e.data.height + 'px';
-      }
-    });
-  </script>
 </body>
 </html>
