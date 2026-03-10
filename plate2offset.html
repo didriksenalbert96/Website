@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plate2Offset — Albert Didriksen</title>
+  <meta name="description" content="Offset the impact of your meals on farmed animals with a small donation. A tool by Albert Didriksen.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .iframe-wrap {
+      width: 100%;
+      height: calc(100vh - 64px - 120px); /* viewport minus navbar and footer */
+      min-height: 600px;
+      border: none;
+    }
+    .iframe-wrap iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar__logo">Albert Didriksen</a>
+      <ul class="navbar__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="other-work.html">Other Work</a></li>
+        <li><a href="plate2offset.html" class="active">Plate2Offset</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+      <button class="navbar__toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="iframe-wrap">
+    <iframe src="https://plate2offset.vercel.app" title="Plate2Offset — Offset your meal's impact on farmed animals" allow="clipboard-write"></iframe>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <ul class="footer__links">
+        <li><a href="mailto:mail@albertdidriksen.com">Email</a></li>
+        <li><a href="https://www.linkedin.com/in/albertdidriksen" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://albertdidriksen.substack.com" target="_blank" rel="noopener">Substack</a></li>
+        <li><a href="https://orcid.org/0000-0002-4158-9777" target="_blank" rel="noopener">ORCID</a></li>
+      </ul>
+      <p>&copy; 2026 Albert Didriksen</p>
+      <p class="footer__note">Shoutout to Anders Eidesvik for teaching me vibecoding.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
