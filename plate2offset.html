@@ -13,7 +13,7 @@
   <style>
     .iframe-wrap {
       width: 100%;
-      height: calc(100vh - 64px - 120px); /* viewport minus navbar and footer */
+      height: calc(100vh - 64px - 160px - 120px); /* viewport minus navbar, header, and footer */
       min-height: 600px;
       border: none;
     }
@@ -44,6 +44,13 @@
       </button>
     </div>
   </nav>
+
+  <header class="page-header">
+    <div class="container">
+      <h1>Plate2Offset</h1>
+      <p>A tool I built to offset the impact of meals on farmed animals. Describe what you ate, and it calculates a donation to <a href="https://www.farmkind.giving" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline;">FarmKind</a>, an effective animal welfare charity.</p>
+    </div>
+  </header>
 
   <div class="iframe-wrap">
     <iframe src="https://plate2offset.vercel.app" title="Plate2Offset — Offset your meal's impact on farmed animals" allow="clipboard-write"></iframe>
